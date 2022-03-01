@@ -5,7 +5,7 @@
     --white: #ffffff;
     --whiteSmoke: #c4c3ca;
     --shadow: 0px 4px 8px 0 rgba(21, 21, 21, .2);
-    --img: url('image/black.png');
+    --img: url('./image/black.png');
     --input: #242323;
     --nav: #242323;
 }
@@ -16,7 +16,7 @@
     --white: rgb(0, 0, 0);
     --whiteSmoke: rgb(76, 76, 78);
     --shadow: 0px 4px 8px 0 rgba(21, 21, 21, .2);
-    --img: url('image/white.png');
+    --img: url('./image/white.png');
     --input: rgb(207, 209, 209);
     --nav: rgb(207, 209, 209);
 }
