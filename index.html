@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
-<body class="day">
+<body>
     <!--===== Navbar Start ======-->
     <nav class="navbar">
         <div class="container">
@@ -119,6 +119,7 @@
     <!--===== Home End ======-->
     <script type="text/javascript" charset="utf-8">
         let icon = document.getElementById("icon");
+        let ch = document.querySelector(".card-front")
 
         icon.onclick = function() {
             document.body.classList.toggle("day");
@@ -126,9 +127,11 @@
             if (document.body.classList.contains("day")) {
                 icon.classList.remove("uil-moon")
                 icon.classList.add("uil-sun")
+                ch.style.background = "url(./image/black.png";
             } else {
                 icon.classList.remove("uil-sun")
                 icon.classList.add("uil-moon")
+                ch.style.background = "url(./image/white.png";
             }
         }
     </script>
