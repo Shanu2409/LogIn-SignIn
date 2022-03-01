@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--===== Main CSS =====-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./headline.css">
+    <!--===== Material Icons =====-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.3/css/unicons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--===== Font Awesome =====-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="day">
+    <!--===== Navbar Start ======-->
+    <nav class="navbar">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="logo">Web<span>Developer</span></div>
+                <input type="checkbox" name="" id="click">
+                <label for="click" class="menu-btn">
+                    <i class="material-icons">menu</i>
+                </label>
+                <ul>
+                    <li><a href="#" class="active">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">gallery</a></li>
+                    <li><a href="#">feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--===== Navbar End ======-->
+    <!--===== Home Start ======-->
+    <section>
+        <div class="container">
+            <div class="row full-screen align-items-center">
+                <div class="left">
+                    <span class="line"></span>
+                    <h2>i'm <span>Shanu</span>, <br> a <span>web designer</span></h2>
+                    <div>
+                        <p class="cd-headline loading-bar">
+                            <span class="cd-words-wrapper">
+                                <b class="is-visible">Front-End Developer</b>
+                                <b>Complex programmer</b>
+                                <b>Weirdo :)</b>
+                            </span>
+                        </p>
+                    </div>
+
+                    <a href="#" class="btn">contact</a>
+
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-git"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i id="icon" class="uil uil-moon"></i></a>
+                    </div>
+
+
+                </div>
+                <div class="right">
+                    <div class="form">
+                        <div class="text-center">
+                            <h6><span>Log In </span> <span>Sign Up</span></h6>
+                            <input type="checkbox" class="checkbox" id="reg-log">
+                            <label for="reg-log"></label>
+                            <div class="card-3d-wrap">
+                                <div class="card-3d-wrapper">
+                                    <div class="card-front">
+                                        <div class="center-wrap">
+                                            <h4 class="heading">Log In</h4>
+                                            <div class="form-group">
+                                                <input type="email" class="form-style" placeholder="Your Email" autocomplete="off">
+                                                <i class="input-icon material-icons">alternate_email</i>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-style" placeholder="Your Password" autocomplete="off">
+                                                <i class="input-icon material-icons">lock</i>
+                                            </div>
+                                            <a href="#" class="btn">submit</a>
+                                            <p class="text-center"><a href="#" class="link">Forgot your password?</a></p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="center-wrap">
+                                            <h4 class="heading">Sign Up</h4>
+                                            <div class="form-group">
+                                                <input type="text" class="form-style" placeholder="Your Name" autocomplete="off">
+                                                <i class="input-icon material-icons">perm_identity</i>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-style" placeholder="Your Email" autocomplete="off">
+                                                <i class="input-icon material-icons">alternate_email</i>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="password" class="form-style" placeholder="Your Password" autocomplete="off">
+                                                <i class="input-icon material-icons">lock</i>
+                                            </div>
+                                            <a href="#" class="btn">submit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===== Home End ======-->
+    <script type="text/javascript" charset="utf-8">
+        let icon = document.getElementById("icon");
+
+        icon.onclick = function() {
+            document.body.classList.toggle("day");
+
+            if (document.body.classList.contains("day")) {
+                icon.classList.remove("uil-moon")
+                icon.classList.add("uil-sun")
+            } else {
+                icon.classList.remove("uil-sun")
+                icon.classList.add("uil-moon")
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./headline.js"></script>
+</body>
+
+</html>
